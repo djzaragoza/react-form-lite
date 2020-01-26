@@ -19,7 +19,7 @@ export default class App extends Component {
     const { model, selected } = this.state
     return (
       <div>
-        <h1>React form lite</h1>
+        <h1>Basic React Form/h1>
         <h3>Enter values and press submit.</h3>
         <Form model={model} onChange={model => this.setState({model})} onSubmit={model => this.setState({selected: model})}>
           <Field name="title" label="Title"/>
@@ -33,7 +33,7 @@ export default class App extends Component {
           <button type="submit">Submit</button>
         </Form>
         <h4>Model (onChange):</h4>
-        <pre>{JSON.stringify(model)}</pre>        
+        <pre>{JSON.stringify(model)}</pre>
         <h4>Model (onSubmit):</h4>
         <pre>{JSON.stringify(selected)}</pre>
       </div>
